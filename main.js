@@ -5,8 +5,8 @@ const dayBefore = getDayBefore();
 const input = document.getElementById("place");
 const btn = document.querySelector(".btn");
 btn.addEventListener("click", handleClick);
-const baseEndpoint = "http://api.weatherapi.com/v1/forecast.json?key=7abbb4eef01543fdbde124759200807&q=";
-const historyEndpoint = "http://api.weatherapi.com/v1/history.json?key=7abbb4eef01543fdbde124759200807&q="
+const baseEndpoint = "https://api.weatherapi.com/v1/forecast.json?key=7abbb4eef01543fdbde124759200807&q=";
+const historyEndpoint = "https://api.weatherapi.com/v1/history.json?key=7abbb4eef01543fdbde124759200807&q="
 
 //============INITIAL WEATHER REPORT ELEMENTS======================
 const weatherDisplay = document.getElementById("weather_display");
