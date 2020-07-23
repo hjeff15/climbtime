@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js" integrity="sha256-w7+V9/jcjUhs0pVV3uaphYQbXkTJZkd/3CfsinPRzvM=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script> -->
+    <!-- <script type="text/javascript" src="particle.js"></script> -->
+    <!-- <script src="LIBRARIES/p5/p5.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Climb Time</title>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="container">
+        <header class="header">
+            <img id="contents_icon" src="img/noun_menu_2867061.svg" class="header_icon">
+            <h1>WALK/RUN/<br>RIDE+CLIMB</h1>
+            <img id="search_icon" src="img/noun_Search_1219722.svg" class="header_icon">
+        </header>
+
+        <select type="text" name="venues" id="place">
+            <option value="">--Choose a Destination--</option>
+            <option value="cornwall">Land’s End, Cornwall</option>
+            <option value="pembroke">Pembroke, Wales</option>
+            <option value="ben_nevis">Ben Nevis, Scotland</option>
+            <option value="malham_cove">Malham Cove, Yorkshire</option>
+            <option value="gower">Gower Peninsula, Wales</option>
+            <option value="stoney">Stoney Middleton, Peak District</option>
+            <option value="llanberis_pass">Llanberis Pass, Wales</option>
+            <option value="portland">Portland, Dorset</option>
+            <option value="st_bees">St Bees Head, Cumbria</option>
+            <option value="peak_millstone">Peak District, Millstone</option>
+        </select>
+
+        <button class="btn" id="show_weather">Get Weather!</button>
+
+        <div id="today_forecast" class="weather_box">
+            <p id="today" class="day"></p>
+            <img class="rain_icon rain_chance" src="img/noun_Rain_829873.svg"><p id="pp_today" class="percent_text rain_chance"></p>
+            <p id="today_max" class="max_temp"></p>
+            <p id="today_min" class="min_temp"></p>
+        </div>
+
+        <div id="day1_forecast" class="weather_box">
+            <p id="day1" class="day"></p>
+            <img class="rain_icon rain_chance" src="img/noun_Rain_829873.svg"><p id="pp_tomorrow" class="percent_text rain_chance"></p>
+            <p id="day1_max" class="max_temp"></p>
+            <p id="day1_min" class="min_temp"></p>
+        </div>
+
+        <div id="next_day_forecast" class="weather_box">
+            <p id="next_day" class="day"></p>
+            <img class="rain_icon rain_chance" src="img/noun_Rain_829873.svg"><p id="pp_day_after" class="percent_text rain_chance"></p>
+            <p id="next_day_max" class="max_temp"></p>
+            <p id="next_day_min" class="min_temp"></p>
+        </div>
+
+        <main>
+            <div id="weather_display">
+                <p id="weather">This app is designed to get a detailed overvue of the current
+                    and future conditions for climbing, walking and running at 
+                    some of the UK's most popular destinations. 
+                </p>
+                <p id="wind">If there's anything you think that 
+                    could improve this service please get in contact using the email below;</p>
+                <p id="temp"></p>
+                <p id="humidity"></p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="weekly_outlook" id="daybefore_box">
+                <p id="two_days_before" class="footer_text"></p>
+                <img id="two_days_icon" class="weather_icon">
+                <p id="celcius_dayBF" class="footer_temp"></p>
+            </div>
+            <div class="weekly_outlook" id="yesterday_box">
+                <p id="day_before" class="footer_text"></p>
+                <img id="day_before_icon" class="weather_icon">
+                <p id="celcius_YD" class="footer_temp"></p>
+            </div>
+            <div class="weekly_outlook" id="today_box">
+                <p id="day_today" class="footer_text"></p>
+                <img id="today_icon" class="weather_icon">
+                <p id="celcius_today" class="footer_temp"></p>
+            </div>
+            <div class="weekly_outlook" id="tomorrow_box">
+                <p id="day_tomorrow" class="footer_text"></p>
+                <img id="tomorrow_icon" class="weather_icon">
+                <p id="celcius_tomorrow" class="footer_temp"></p>
+            </div>
+            <div class="weekly_outlook" id="dayafter_box">
+                <p id="day_after_that" class="footer_text"></p>
+                <img id="day_after_icon" class="weather_icon">
+                <p id="celcius_dayAfter" class="footer_temp"></p>
+            </div>
+        </footer>
+        <!-- <div class="peak_district">
+            <a href="https://www.metoffice.gov.uk/public/weather/mountain-forecasts/peak-district" class="metoffice-mountain-forecast" data-theme="dark">Peak District Mountain Forecast</a>
+            <script type="text/javascript" src="//www.metoffice.gov.uk/public/pws/components/mountain/loader.js"></script>
+        </div>
+
+        <div class="snowden">
+            <a href="https://www.metoffice.gov.uk/public/weather/mountain-forecasts/snowdonia" class="metoffice-mountain-forecast" data-theme="dark">Snowdonia Mountain Forecast</a>
+            <script type="text/javascript" src="//www.metoffice.gov.uk/public/pws/components/mountain/loader.js"></script>
+        </div> -->
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
