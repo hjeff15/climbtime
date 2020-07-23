@@ -257,7 +257,6 @@ function getDayBefore(){
     return (year+"-"+month+"-"+day);
 }
 
-
 //=================THINGS TO ADD================
 //4. icons for wind direction?
 //6. links to Met office widgets
